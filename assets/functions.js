@@ -37,9 +37,11 @@ anon();
 
 
 // arrow function
-let arrow = () => {
-    console.log('arrow function');
-};
+
+let arrow = => console.log('arrow function');
+
+
+
 //kaldes ved variabel navn
 arrow();
 

@@ -1,71 +1,59 @@
 
+/* // function one
+function functionOne() {
+
+    functionTwo();
+
+}
+
+// funktion nr 2
+function functionTwo() {
+
+    console.log(1 + 2);
+
+}
 
 
-/*
-funktionsbeskrivelse:
-lave en lommeregner der kan lægge to tal sammen.
-den skal vise følgende i konsollen.
-Dit resultat er:
-234 (resultatet fra funktionen)
-*/
-
-myAdd(1, 20);
-
-mySubtraction(27, 2);
-
-myMultiplication(10, 30);
+//functionOne();
+functionTwo(); */
 
 
-function myAdd(valueOne, valueTwo) {
 
+// trigger 
+functionOne();
+
+
+
+// function one
+function functionOne() {
+    console.log('funktion 1');
+
+    functionTwo(10, 4000);
+
+}
+
+// funktion nr 2
+function functionTwo(numberOne, numberTwo) {
+    console.log('funktion 2');
+
+    let myResult = addMe(numberOne, numberTwo);
+    functionThree(myResult);
+}
+
+
+function addMe(valueOne, valueTwo) {
+    console.log('add me');
     let myResult = valueOne + valueTwo;
 
-    myView(myResult, 'Dit plus stykke er:')
-}
-
-
-function myMultiplication(valueOne, valueTwo) {
-
-    let myResult = valueOne * valueTwo;
-
-    myView(myResult, 'Dit gange stykke er:')
+    return myResult;
 }
 
 
 
-function mySubtraction(valueOne, valueTwo) {
-
-    let myResult = valueOne - valueTwo;
-
-    myView(myResult, 'Dit minus stykke er:');
-
-
-}
-
-myPokeMon();
-
-function myPokeMon() {
-
-
-    let name = 'pikachu';
-    let des = 'pokemon'
-    myView(name, des);
-
-}
-
-
-function myView(myData, myDescription) {
-
-    console.log(myDescription);
+function functionThree(myData) {
+    console.log('funktion 3');
     console.log(myData);
 }
-
-
-
-
-
-
-
 
 
 
